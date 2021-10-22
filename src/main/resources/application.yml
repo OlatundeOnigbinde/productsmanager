@@ -1,0 +1,17 @@
+spring:
+    application:
+        name: product-manager-service
+    jpa:
+        hibernate:
+            :ddl-auto: update
+        database-platform: org.hibernate.dialect.MariaDBDialect
+    datasource:
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/product_manager_db?serverTimezone=UTC
+        username: productmanageruser
+        password: productmanager
+server:
+    port: 8082
+    
+session:
+    idle-duration-minutes: 5
