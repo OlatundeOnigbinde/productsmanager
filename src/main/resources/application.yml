@@ -2,16 +2,21 @@ spring:
     application:
         name: product-manager-service
     jpa:
+        schema: product_manager_db
         hibernate:
             :ddl-auto: update
         database-platform: org.hibernate.dialect.MariaDBDialect
     datasource:
-        driverClassName: com.mysql.jdbc.Driver
-        url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/product_manager_db?serverTimezone=UTC
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/${spring.jpa.schema}?serverTimezone=UTC
         username: productmanageruser
         password: productmanager
 server:
     port: 8082
-    
+
 session:
     idle-duration-minutes: 5
+file:
+    path:
+        categories: C:\Users\Olatunde Onigbinde\Documents\IntelliJ-Workspace\seniorengineertaskgocity\deployment\BE\categories.csv
+        products: C:\Users\Olatunde Onigbinde\Documents\IntelliJ-Workspace\seniorengineertaskgocity\deployment\BE\products.csv
