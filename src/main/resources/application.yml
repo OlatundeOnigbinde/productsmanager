@@ -18,5 +18,5 @@ session:
     idle-duration-minutes: 5
 file:
     path:
-        categories: C:\Users\Olatunde Onigbinde\Documents\IntelliJ-Workspace\seniorengineertaskgocity\deployment\BE\categories.csv
-        products: C:\Users\Olatunde Onigbinde\Documents\IntelliJ-Workspace\seniorengineertaskgocity\deployment\BE\products.csv
+        categories: categories.csv
+        products: products.csv

@@ -1,6 +1,5 @@
 package com.lpg.pmapp.initconfig;
 
-import com.lpg.pmapp.ProductsmanagerApplication;
 import com.lpg.pmapp.model.Category;
 import com.lpg.pmapp.model.Product;
 import com.lpg.pmapp.model.User;
